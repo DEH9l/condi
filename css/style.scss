@@ -1,5 +1,5 @@
 @import " bootstrap.css";
-  @import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");
+/*  @import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");*/
 
 
   @font-face {
@@ -71,7 +71,9 @@
     unicode-range: U+0020-04D9;
   }
 
-
+body{
+  background-color: #FCF5EB;
+}
 
   .header{
     background-color: #652B15;
@@ -93,6 +95,7 @@
       }
       &__cart {
         font-size: 30px;
+        color: #652B15;
       }
       &__products{
         border-radius: 40px;
@@ -103,23 +106,51 @@
         min-width: 22px;
         height: 22px;
         text-align: center;
-        left: 30px;
-        top: 5px;
+        right: 40px;
+        top: 5%;
+        color: white;
       }
-      &__price{
+/*      &__price{
       word-break: break-word;
-      }
+      }*/
     }
   }
-
+  .top-logo{
+    width: 50%;
+  }
+  .categories__img{
+  width: 50px;
+  height: 50px;
+}
+.phones{
+  p{
+    color: #652B15;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+.fa-phone{
+  padding: 10px;
+  background-color: #FF00FF;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  color: white;
+}
 @media (max-width:991px) {
   .header__right{
-    max-width: 75%;
+    max-width: 200px;
     top: 5px;
-    left: 40%;
+    right: 15px;
     position: absolute;
   }
 }
-@media (min-width:990px) {
-
+@media screen and(max-width:567px) {
+  .top-logo{
+    width: 75%;
+  }
+/*  .header__right__products{
+    left: 20%;
+  }*/
 }

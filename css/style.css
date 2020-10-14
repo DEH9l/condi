@@ -1,5 +1,5 @@
 @import url(bootstrap.css);
-@import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");
+/*  @import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");*/
 @font-face {
   font-family: 'PF DinDisplay Pro Medium';
   src: url("/fonts/PFDinDisplayProMediumRegular/PFDinDisplayProMediumRegular.eot");
@@ -40,6 +40,9 @@
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-04D9; }
+body {
+  background-color: #FCF5EB; }
+
 .header {
   background-color: #652B15; }
   .header .navbar-light .navbar-nav .nav-link, .header .navbar-light .navbar-nav .show > .nav-link, .header .navbar-light .navbar-nav .active > .nav-link, .header .navbar-light .navbar-nav .nav-link.show, .header .navbar-light .navbar-nav .nav-link.active {
@@ -51,12 +54,16 @@
     text-decoration: none;
     max-width: 25%;
     width: 100%;
-    font-weight: bold; }
+    font-weight: bold;
+    /*      &__price{
+          word-break: break-word;
+          }*/ }
     .header__right:hover {
       color: pink;
       text-decoration: none; }
     .header__right__cart {
-      font-size: 30px; }
+      font-size: 30px;
+      color: #652B15; }
     .header__right__products {
       border-radius: 40px;
       background-color: deeppink;
@@ -66,16 +73,43 @@
       min-width: 22px;
       height: 22px;
       text-align: center;
-      left: 30px;
-      top: 5px; }
-    .header__right__price {
-      word-break: break-word; }
+      right: 40px;
+      top: 5%;
+      color: white; }
+
+.top-logo {
+  width: 50%; }
+
+.categories__img {
+  width: 50px;
+  height: 50px; }
+
+.phones p {
+  color: #652B15;
+  font-weight: bold;
+  font-size: 14px; }
+
+.fa-phone {
+  padding: 10px;
+  background-color: #FF00FF;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  color: white; }
 
 @media (max-width: 991px) {
   .header__right {
-    max-width: 75%;
+    max-width: 200px;
     top: 5px;
-    left: 40%;
+    right: 15px;
     position: absolute; } }
+@media screen and (max-width: 567px) {
+  .top-logo {
+    width: 75%; }
+
+  /*  .header__right__products{
+      left: 20%;
+    }*/ }
 
 /*# sourceMappingURL=style.css.map */
